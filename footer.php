@@ -1,8 +1,10 @@
 <footer>
+hello from footer.php
   <div class="container">
     <p>&copy; HackerYou <?php echo date('Y'); ?></p>
   </div>
 </footer>
+goodbye from footer.php
 
 <script>
 // scripts.js, plugins.js and jquery are enqueued in functions.php

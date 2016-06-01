@@ -7,6 +7,13 @@
 * Author URI: http://hackeryou.com
 */
 
+//VARIABLES
+
+$OpenSans: 'Open Sans', sans-serif;
+$Montserrat:  'Montserrat', sans-serif;
+$Crimson: 'Crimson Text', serif;
+$aqua: #D3F5F1;
+
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
@@ -14,11 +21,6 @@
 @import 'comments';
 @import 'footer';
 
-//VARIABLES
-
-// $OpenSans: 'Open Sans', sans-serif;
-// $Montserrat:  'Montserrat', sans-serif;
-// $Crimson: 'Crimson Text', serif;
 
 
 /*
@@ -27,13 +29,22 @@ Default Styling
 ====================================
 */
 
+
+body {
+	color: #333;
+	font-family: $OpenSans;
+}
+
 img {
 	max-width: 100%;
 }
 
-body {
-	color: #333;
+h1, h2, h3, h4 {
+	font-family: $Montserrat;
+	text-transform: uppercase;
+	text-align: center;
 }
+
 
 .container {
 	max-width: 1200px;
@@ -49,10 +60,6 @@ body {
 .full {
 	width: 100%;
 }
-
-
-
-
 
 
 
