@@ -13,6 +13,8 @@ $OpenSans: 'Open Sans', sans-serif;
 $Montserrat:  'Montserrat', sans-serif;
 $Crimson: 'Crimson Text', serif;
 $aqua: #D3F5F1;
+$blue: #5898EF;
+$gold: #DBBA3C;
 
 @import 'normalize';
 @import 'typography';
@@ -23,44 +25,83 @@ $aqua: #D3F5F1;
 
 
 
+
 /*
 ====================================
 Default Styling
 ====================================
 */
 
+html {
+	font-size: 62.5%;
+
+}
 
 body {
 	color: #333;
 	font-family: $OpenSans;
 }
 
+
 img {
 	max-width: 100%;
 }
 
-h1, h2, h3, h4 {
-	font-family: $Montserrat;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	flex: 1;
 }
 
 .content {
 	float: left;
 	width: 65%;
 	margin-right: 5%;
+	flex: 1;
 }
 
 .full {
 	width: 100%;
 }
 
+.main {
+	min-height: 100vh;
+	display: flex;
+}
 
+//HEADER
+
+.hero{
+	background: url('images/header.jpeg');
+	background-position: center center;
+	background-size: cover;
+	height: calc(100vh - 80px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h2{
+		color: #fff;
+	}
+}
+
+
+//PAGES
+
+.page-header{
+	background: url('images/header.jpeg');
+	background-position: center center;
+	background-size: cover;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h2{
+		display: inline-block;
+		border: 3px solid ;
+		padding: 10px 30px;
+		color: #fff;
+	}
+
+}
 
 

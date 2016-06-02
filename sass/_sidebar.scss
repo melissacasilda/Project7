@@ -1,11 +1,39 @@
 .sidebar {
 	width: 30%;
 	float: left;
+	padding: 5px;
 	ul {
 		margin: 0;
 		padding: 0;
+		border-bottom: 1px solid #666;
 		li {
 			list-style: none;
+			a{
+				font-family: $Crimson;
+				font-style: italic;
+			}
+			li:last-child{
+				margin-bottom: 40px;
+			}
 		}
 	}
 }
+
+form {
+	position: relative;
+	input[type=search] {
+		padding: 10px 20px;
+		width: 80%;
+		font-family: $Crimson;
+		font-size: 1.8rem;
+	}
+
+	.fa-search{
+		position: absolute;
+		top: 0;
+		left: 75%;
+		padding: 13px;
+	}
+}
+
+

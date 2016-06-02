@@ -1,10 +1,14 @@
 <footer>
-hello from footer.php
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+    <!-- <p>&copy; Melissa Gonsalves <?php echo date('Y'); ?></p> -->
+    <?php dynamic_sidebar('my-custom-widget'); ?>
+    <?php wp_nav_menu( array(
+      'container' => 'nav',
+      'theme_location' => 'footer',
+    )); ?>
   </div>
 </footer>
-goodbye from footer.php
+
 
 <script>
 // scripts.js, plugins.js and jquery are enqueued in functions.php

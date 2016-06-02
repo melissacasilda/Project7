@@ -2,6 +2,19 @@ footer {
 	clear: both;
 	color: white;
 	background: #333;
-	width: 100vw;
-	min-height: 100%;
+	padding: 15px;
+
+	ul.menu li{
+		font-size: 0.7rem;
+		border-right: 1px solid $gold;
+		padding: 5px 40px;
+		a{
+			color: #666;
+			&:hover {
+				color: $gold;
+			}
+		}
+	}
+
 }
+

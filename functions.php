@@ -22,7 +22,8 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Primary Navigation',
+		'footer' => 'Footer Navigation',
 	) );
 
 	/*
@@ -175,6 +176,15 @@ function hackeryou_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
+	register_sidebar(array(
+		'name' => 'My Custom Widget',
+		'id' => 'my-custom-widget',
+		'before_widget' => '<div class = "single-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	));
+
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
@@ -276,3 +286,18 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+
+
+//custom function to get post thumbnail URL
+
+function feature_image_url($currentPost){
+	$imageID = get_post_thumbnail_id($currentPost->ID);
+	$imageURL = wp_get_attachment_url($imageID);
+	return $imageURL;
+};
+
+// function  get_author_posts_url(){
+// 	$authorLink = the_author_link($author->ID);
+// 	return $authorLink;
+// };

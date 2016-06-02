@@ -1,5 +1,9 @@
 <?php get_header();  ?>
 
+<div class="page-header">
+  <h2><?php the_title(); ?></h2>
+</div>
+
 <div class="main">
   <div class="container">
 

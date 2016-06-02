@@ -7,6 +7,7 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300|Montserrat|Crimson+Text:400italic' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
 </head>
@@ -15,17 +16,20 @@
 <body <?php body_class(); ?>>
 
 <header>
+<nav>
+  <?php wp_nav_menu( array(
+    'container' => false,
+    'theme_location' => 'primary'
+  )); ?>
+</nav>
   <div class="container">
-    <h1>
+    <!-- THIS IS THE MAIN TITLE -->
+    <!-- <h1>
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
       </a>
-    </h1>
+    </h1> -->
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?>
   </div> <!-- /.container -->
 </header><!--/.header-->
 

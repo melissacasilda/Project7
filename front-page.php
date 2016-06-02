@@ -1,4 +1,7 @@
 <?php get_header();  ?>
+<div class="hero">
+  <h2><?php the_title(); ?></h2>
+</div>
 
 <div class="main">
   <div class="container">
@@ -15,7 +18,7 @@
 
     </div> <!-- /,content -->
 
-    <?php get_sidebar(); ?>
+    <?//php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
