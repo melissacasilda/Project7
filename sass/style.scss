@@ -13,8 +13,9 @@ $OpenSans: 'Open Sans', sans-serif;
 $Montserrat:  'Montserrat', sans-serif;
 $Crimson: 'Crimson Text', serif;
 $aqua: #D3F5F1;
-$blue: #5898EF;
-$gold: #DBBA3C;
+$gold: #E6AE48;
+$lightgold: #F5D798;
+$offwhite: #FAFAFA;
 
 @import 'normalize';
 @import 'typography';
@@ -22,6 +23,10 @@ $gold: #DBBA3C;
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'front-page';
+@import 'home';
+@import 'contact';
+@import 'pages';
 
 
 
@@ -39,12 +44,13 @@ html {
 
 body {
 	color: #333;
-	font-family: $OpenSans;
+	font-family: $Crimson;
+	background: $offwhite;
 }
-
 
 img {
 	max-width: 100%;
+	display: block;
 }
 
 .container {
@@ -67,41 +73,72 @@ img {
 .main {
 	min-height: 100vh;
 	display: flex;
-}
+	.container {
+		padding-top: 8%;
+		display: flex;
+	}
 
-//HEADER
-
-.hero{
-	background: url('images/header.jpeg');
-	background-position: center center;
-	background-size: cover;
-	height: calc(100vh - 80px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	h2{
-		color: #fff;
+	.content {
+		margin: 0 auto;
 	}
 }
 
 
-//PAGES
 
-.page-header{
-	background: url('images/header.jpeg');
-	background-position: center center;
-	background-size: cover;
-	height: 50vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	h2{
+//BUTTON
+
+.button	{
+	display: inline-block;
+	font-family: $Montserrat;
+	font-size: 1.3rem;
+	letter-spacing: 3px;
+	border: 1px solid $gold;
+	padding: 10px 20px;
+	margin: 0 5px;
+
+	&:hover {
+		background: $gold;
+		color: $offwhite;
+	}
+}
+
+//HR
+
+hr {
+	border: 0;
+	height: 1px;
+	background: #ddd;
+	margin: 25px 0;
+	font-family: arial;
+	&:after{
+		content: '\25C6';
 		display: inline-block;
-		border: 3px solid ;
-		padding: 10px 30px;
-		color: #fff;
+		position: relative;
+		top: -12px;
+		padding: 0 10px;
+		color: $gold;
+		font-size: 18px;
 	}
-
 }
 
+//FORMS
 
+input[type=submit]{
+	width: 120px;
+	padding: 10px;
+	background: $gold;
+	color: $offwhite;
+	border: 0;
+	font-family: $Montserrat;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	&:hover {
+		background: #F5D798;
+	}
+}
+
+textarea{
+	margin-bottom: 30px;
+}
+
+@import 'media';

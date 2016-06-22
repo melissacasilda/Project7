@@ -1,0 +1,78 @@
+.page-header{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	img {
+		object-fit: cover;
+		height: 50vh;
+		width: 100%;
+	}
+	h2{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 3px solid ;
+		padding: 10px 30px;
+		color: #fff;
+		text-align: center;
+	}
+}
+
+.page-h4{
+	text-align: center;
+	position: relative;
+	margin-bottom: 60px;
+
+	&:after{
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 50%;
+			height: 100%;
+			width: 6%;
+			transform: translate(-50%, 0);
+			border-bottom: 3px solid $gold;
+			padding-bottom: 5px;
+
+	}
+}
+
+// ABOUT PAGE
+
+p {
+	text-align: center;
+}
+
+.services-container {
+	display: flex;
+	text-align: center;
+
+	.box {
+		margin: 0 20px;
+		background: #fff;
+	}
+
+	.service-img{
+		height: 100%;
+		padding-bottom: 60%; // This is the aspect ratio
+		height: 0;
+		overflow: hidden;
+		position: relative;
+	}
+
+	h4 {
+		margin-top: 30px;
+	}
+
+	hr {
+		margin: 30px;
+	}
+
+	p {
+		margin: 0 20px 30px;
+	}
+}

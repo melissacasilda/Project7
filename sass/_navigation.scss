@@ -1,19 +1,31 @@
 header{
 	background: #333;
 
-	nav {
-		background: #333;
-		padding: 20px;
+	nav{
+		background: #3C3837;
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
 		.container{
 			margin: auto;
 		}
+
+		.logo img {
+			width: 30px;
+			margin-left: 30px;
+		}
 	}
 }
+
+
 
 ul.menu {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	flex-grow: 1;
+	margin: auto;
+
 
 	li {
 		display: inline;

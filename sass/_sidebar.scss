@@ -2,22 +2,33 @@
 	width: 30%;
 	float: left;
 	padding: 5px;
+	margin-left: 50px;
 	ul {
 		margin: 0;
 		padding: 0;
-		border-bottom: 1px solid #666;
+		
 		li {
 			list-style: none;
 			a{
 				font-family: $Crimson;
-				font-style: italic;
+				font-size: 1.8rem;
 			}
 			li:last-child{
-				margin-bottom: 40px;
+				margin-bottom: 20px;
 			}
+			h3{
+				font-size: 1.6rem;
+				border-top: 1px solid #ddd;
+				padding-top: 40px;
+			}
+
 		}
+
 	}
+
 }
+
+
 
 form {
 	position: relative;
@@ -31,9 +42,29 @@ form {
 	.fa-search{
 		position: absolute;
 		top: 0;
-		left: 75%;
-		padding: 13px;
+		left: 78%;
+		padding: 15px;
 	}
 }
+
+.tagcloud {
+		display: flex;
+		flex-wrap: wrap;
+
+	a{
+		border:1px solid $gold ;
+		border-radius: 2px;
+		padding: 10px 20px;
+		margin: 5px;
+		display: inline-block;
+		flex-grow: 1;
+		text-align: center;
+		&:hover{
+			background: $gold;
+			color: #fff;
+		}
+	}
+}
+
 
 

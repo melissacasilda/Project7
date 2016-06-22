@@ -1,0 +1,41 @@
+div#wpcf7-f30-p6-o1 {
+    margin: 0 auto;
+    width: 55%;
+}
+
+.wpcf7 {
+	font-family: $Montserrat;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	p {
+		font-size: 1.3rem;
+		margin-top: 50px;
+	}
+
+	input,
+	textarea{
+		width: 100%;
+		font-family: $Crimson;
+		font-size: 1.6rem;
+		margin: 5px 0 10px;
+		padding: 10px;
+		p{
+			text-align: left;
+		}
+	}
+
+	input[type=submit]{
+		width: 120px;
+		padding: 10px;
+		background: $gold;
+		color: $offwhite;
+		border: 0;
+		font-family: $Montserrat;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		&:hover {
+			background: #F5D798;
+		}
+	}
+}

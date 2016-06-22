@@ -1,3 +1,7 @@
+<div class="second-footer">
+		
+</div>
+
 <footer>
   <div class="container">
     <!-- <p>&copy; Melissa Gonsalves <?php echo date('Y'); ?></p> -->
@@ -9,8 +13,9 @@
   </div>
 </footer>
 
-
 <script>
+
+
 // scripts.js, plugins.js and jquery are enqueued in functions.php
 /* Google Analytics! */
  var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID

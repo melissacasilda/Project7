@@ -2,6 +2,9 @@
 
 /** Tell WordPress to run theme_setup() when the 'after_setup_theme' hook is run. */
 
+
+
+
 if ( ! function_exists( 'theme_setup' ) ):
 
 function theme_setup() {
@@ -47,6 +50,8 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,300|Montserrat|Crimson+Text:400,400italic');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -288,7 +293,6 @@ function get_post_parent($post) {
 }
 
 
-
 //custom function to get post thumbnail URL
 
 function feature_image_url($currentPost){
@@ -301,3 +305,38 @@ function feature_image_url($currentPost){
 // 	$authorLink = the_author_link($author->ID);
 // 	return $authorLink;
 // };
+
+
+//REMOVES TAG CLOUD ININE STYING
+add_filter('wp_generate_tag_cloud', 'xf_tag_cloud',10,3);
+
+function xf_tag_cloud($tag_string){
+   return preg_replace("/style='font-size:.+pt;'/", '', $tag_string);
+}
+
+
+//REMOVES CONTINUE READING FROM EXCERPT
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 60;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+
+function sbt_custom_excerpt_more( $output ) {return preg_replace('/<a[^>]+>Continue reading.*?<\/a>/i','',$output);
+}
+add_filter( 'get_the_excerpt', 'sbt_custom_excerpt_more', 999 );
+
+
+//REMOVES SVG BLOCK
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
+
+// HIDES TOOLBAR
+
+// add_filter('show_admin_bar', '__return_false');
