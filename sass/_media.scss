@@ -60,19 +60,21 @@
 	}
 
 	.recent-posts{
-		position: relative;
+		flex-direction: column;
 
 		.recent-image{
-			width: 100%;
-			height: 50%;
-			position: absolute;
-			top: 0;
-			left: 0;
+			display: none;
+
 		}
 
 		.recent-container{
-			width: auto;
-			position: relative;
+			width: 100%;
+			margin: 0;
+			padding: 50px;
+		}
+
+		.recent-image-mobile{
+			display: block;
 		}
 	}
 
@@ -87,5 +89,25 @@
 
 
 @media(max-width: 500px){
+	.hero{
+		h2{
+			font-size: 3rem;
+			text-align: center;
+			letter-spacing: 15px;
+			padding: 5px 5px 5px 20px;
+		}
+	}
+
+
+	section.about{
+		.about-container{
+			width: 90%;
+			top: 0;
+		}
+	}
+
+	.home-container{}
+
+
 
 }

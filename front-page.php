@@ -78,6 +78,8 @@
         <div class="recent-image" style="background: url(<?php echo $recentimage ['sizes']['large']?>); background-size: cover; background-position: center">
         </div>
 
+        <img src="<?php echo $recentimage ['sizes']['large']?>" alt="" class="recent-image-mobile">
+
         <div class="recent-container">
 
           <h4 class ="front-h4">RECENT POSTS</h4>

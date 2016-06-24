@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="50px" height="56px" viewBox="0 0 50 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
-    <title>cube-favicon</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M25.038,0 L46.568,12.917 L42.318,15.517 L25.038,26.087 L7.758,15.517 L3.508,12.917 L25.038,0 Z M0.255,19.132 L21.54,32.149 L21.54,55.368 L0.255,41.595 L0.255,19.132 Z M49.822,41.595 L28.538,55.368 L28.538,32.149 L49.822,19.132 L49.822,41.595 Z" id="Shape" fill="#E6AE48"></path>
-    </g>
-</svg>
+<svg width="50" height="56" viewBox="0 0 50 56" xmlns="http://www.w3.org/2000/svg"><title>cube-favicon</title><path d="M25.038 0l21.53 12.917-4.25 2.6-17.28 10.57-17.28-10.57-4.25-2.6L25.038 0zM.255 19.132L21.54 32.149v23.219L.255 41.595V19.132zm49.567 22.463L28.538 55.368V32.149l21.284-13.017v22.463z" fill="#E6AE48" fill-rule="evenodd"/></svg>
